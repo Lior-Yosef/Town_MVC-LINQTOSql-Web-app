@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="CityDB" Class="DataClasses1DataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="WebSettings" ConnectionString="Data Source=LAPTOP-OT5IVM7S;Initial Catalog=CityDB;Integrated Security=True;Pooling=False" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="CityDBConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.Residents" Member="Residents">
+    <Type Name="Resident">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="[First-name]" Member="First_name" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="[Last-name]" Member="Last_name" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Born" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Address" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Seniority" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>
